@@ -52,3 +52,17 @@ html[data-reduced=true]::view-transition-group(*),html[data-reduced=true]::view-
 /* Fill the cover width without a vacant side panel. */
 .cover-photo .image-wrap{width:100%;height:auto;max-height:none;aspect-ratio:auto}.cover-photo .image-wrap img{display:block;width:100%;height:auto;max-width:none;max-height:none;object-fit:contain}
 
+
+/* Continuous photo columns replace offset grids and empty cells. */
+.home-page main,.inner-page main,.portfolio-page main{max-width:1720px;padding-inline:3%}
+.selected-grid,.portfolio-page .photo-grid{display:block;columns:2;column-gap:20px}
+.selected-grid .photo-card,.portfolio-page .photo-grid .photo-card{display:block;width:100%;margin:0 0 20px;break-inside:avoid;grid-column:auto!important}
+.selected-grid .photo-card .image-wrap,.portfolio-page .photo-grid .photo-card .image-wrap{aspect-ratio:auto;height:auto}
+.selected-grid .photo-card img,.portfolio-page .photo-grid .photo-card img{width:100%;height:auto}
+.selected{padding:30px 0 12px}.selected .section-head{margin-bottom:16px}.section-head h2{margin-bottom:0}.home-links{padding-top:8px}.home-links a{min-height:60px}
+.portfolio-page .page-heading,.inner-page .page-heading{padding:20px 0 24px}.portfolio-tools{margin-bottom:18px}
+@media(max-width:640px){.home-page main,.inner-page main,.portfolio-page main{padding-inline:4%}.selected-grid,.portfolio-page .photo-grid{columns:1}.selected-grid .photo-card,.portfolio-page .photo-grid .photo-card{margin-bottom:16px;width:100%!important}.cover h1{display:flex;font-size:clamp(36px,9vw,54px);line-height:1;gap:.18em}.cover h1>span{display:inline-block}.cover-heading{flex-wrap:wrap;gap:12px;padding-bottom:16px}.cover-link{min-height:40px}.cover{padding-top:18px}.selected{padding-top:24px}}
+
+.artist-group .image-wrap{aspect-ratio:4/3}.artist-group img{width:100%;height:100%;object-fit:cover;object-position:center}.artist-card:nth-child(2) img{object-position:50% 68%}.artist-card:nth-child(3) img{object-position:50% 25%}.artist-card:nth-child(5) img{object-position:50% 42%}
+.artist-card:first-child .image-wrap{aspect-ratio:16/9}.artist-card:first-child img{object-fit:contain}.artist-card:nth-child(2) .image-wrap{aspect-ratio:1/1}
+.artist-group .image-wrap,.artist-card:first-child .image-wrap,.artist-card:nth-child(2) .image-wrap{aspect-ratio:16/9}.artist-card:nth-child(2) img{object-position:50% 55%}
