@@ -77,3 +77,5 @@ body{isolation:isolate;background:#fff}body:before{content:'';position:fixed;ins
 @media(max-width:640px){.horizontal-story .selected-grid .photo-card img{max-width:none;object-fit:contain}}
 @media(prefers-reduced-transparency:reduce){body:before,body:after,.horizontal-story .scroll-stage:before{display:none}}
 .horizontal-story .scroll-stage{top:88px;height:calc(100svh - 88px)}.horizontal-story .selected-grid .photo-card .image-wrap{height:calc(100svh - 184px)}@media(max-width:640px){.horizontal-story .scroll-stage{top:72px;height:calc(100svh - 72px)}.horizontal-story .selected-grid .photo-card .image-wrap{height:calc(100svh - 154px)}}
+body:before{opacity:.48}body:after{background:linear-gradient(130deg,#ffffffd9 5%,#ffffff85 55%,#ffffffc9)}
+body:has(.music-section) .page-heading h1{font-size:clamp(36px,5vw,72px);line-height:1.05}body:has(.music-section) .page-heading h1 br{display:none}body:has(.music-section) .page-heading{padding-block:12px 24px}.artist-grid{row-gap:20px}.artist-card.reveal{transform:none!important;opacity:1!important}.music-section>.section-head{margin-bottom:18px}
