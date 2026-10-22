@@ -1,6 +1,6 @@
 window.SITE = {
   "name": "Takumi Yoneda",
-  "email": "",
+  "email": "takumiyoneda3@gmail.com",
   "photos": [
     {
       "title": "Z50_4692",
